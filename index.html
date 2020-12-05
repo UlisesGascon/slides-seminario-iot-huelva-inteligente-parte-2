@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>IOT Huelva Inteligente (Parte 2)</title>
+
+		<meta name="description" content="¿Qué aprenderá? En este seminario, de 10:00 a 14:00, veremos, partiendo de una base sencilla en la que no es necesario tener conocimiento previo; qué es el IoT, el alcance, así como su potencialidad y proyección. Una charla &quot;in crescendo&quot; de la mano de Ulises Gascón, que culminará en horario de tarde, de 16:00 a 18:00, con el Taller IoT, en el que se proporcionará un Kit de Arduino para cada grupo y se realizarán prácticas introductorias cuyo objetivo será el acercamiento al IoT de primera mano. http://bit.ly/iot-huelva  ">
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="23f262428fd2e9e09cefab544bc8ad67" data-background-image="iot-huelva-inteligente-parte-2/a63b5fad9007d053af823111bab944ba.jpg" data-background-color="rgb(71,96,78)"><div class="sl-block" data-block-type="text" style="width: 640px; left: 0px; top: 603px; height: auto;" data-block-id="e705a8158cfd53346a0a1cd1e742f3e1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(0, 1, 7); background-color: rgb(255, 255, 255);">
+<h1>Seminario de IoT</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 57px; left: 832px; top: 525px; height: auto;" data-block-id="7cad8ba8fbe087383952f43553dde30d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 14; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" dir="ui">
+<h1><span style="font-size:1.4em">2</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="94dba4274d2bc12d93376cdaa93eebc6" style="min-width: 4px; min-height: 4px; width: 165px; height: 165px; left: 778px; top: 511px;"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 165 165"><ellipse rx="82.5" ry="82.5" cx="82.5" cy="82.5" class="shape-element" fill="rgb(255, 255, 255)"></ellipse></svg></div></div></section><section class="stack" data-id="5a69148c8eb8a6828a52e7c117e83a95"><section data-id="2e7a1850f48bfc8569a52a4d8dea6fa5"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="c6de7bbbf95706d4d63c0717f0b352f4"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Agenda</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 560px; left: 200px; top: 280px; height: auto;" data-block-id="a15c8fd527c3f71e79590899348c027f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<ul>
+	<li><span style="font-size:1.2em">¿Qué es IoT?</span></li>
+	<li><strong><span style="font-size:1.2em">¿Cómo puedo formar parte?</span></strong></li>
+	<li><span style="font-size:1.2em">¡Tiempo de Cacharrear!</span></li>
+</ul>
+</div></div></section><section data-id="f62e9ecde47a086290c1db29a2af57e6"><div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 142px; height: auto;" data-block-id="484452e3adb5ae04d87be5947b9c5028"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
+<h2>12:30 - 14:00</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 217px; height: auto;" data-block-id="6adb6eec9cc74fc75082057e9c4651a3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>¿Cómo desarrollar un producto de IoT?</li>
+	<li>Comunidad</li>
+	<li>Retos por superar</li>
+	<li>Fase de Ideación</li>
+	<li>Fase de prototipado</li>
+	<li>Fase de producto</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 350px; height: 350px; left: 496px; top: 140px;" data-block-id="0bf42bcafb50332ac486cc2aee99e217"><div class="sl-block-content" data-inline-svg="false"><img style="" data-natural-width="20" data-natural-height="20" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/ecbb529aca285c93f3accb0982824c08.svg"></div></div></section></section><section data-id="4dba93206b5961a0d0ff800ba647e130"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 575px; height: auto;" data-block-id="9f5b7845e5e9dcfb7cfc95372abe1d0c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Big Bang Theory y el IoT</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="953c47aa978f2c30fa7a28330ec112ae" style="min-width: 30px; min-height: 30px; width: 800px; height: 490px; left: 80px; top: 70px;"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://www.youtube.com/embed/2HKAhZvBEk4?enablejsapi=1"></iframe></div></div></section><section data-id="835597f354934784596bcf173dd9221d"><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="b49d94cb8e511ece630c600eb1483c87"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Esto va de evolucinar</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 960px; height: 367.934px; left: 0px; top: 193.033px;" data-block-id="d0dc2edeec7567945ce052b62bfdb7d1"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="968" data-natural-height="371" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/be0f490dc2bcd43d32f73f4e107ef296.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="98327f7702b536b21e24c946d16ab1e8" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 193px; top: 611px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><a href="http://www.blog.ulisesgascon.com/iotday-2015/" target="_blank"><span style="font-size:0.7em"><em>Foto del IoTDay 2015</em></span></a></p>
+</div></div></section><section data-id="d023579e6f3b9a7b53e28e28acc4ac61" data-background-image="iot-huelva-inteligente-parte-2/bddbb6940a22bbc0b016722f6179d17a.jpg"><div class="sl-block" data-block-type="text" style="width: 348px; left: 0px; top: 599px; height: auto;" data-block-id="7c292b9e93350476fbb9564fde0a3abc"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 11; color: rgb(255, 255, 255); opacity: 0.85; background-color: rgb(0, 0, 0);" data-placeholder-text="Text">
+<h3 style="text-align: right;"><span style="color:#FFFFFF">Ideación</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 262px; left: 0px; top: 490px; height: auto;" data-block-id="aa67e2009573839f5963604b6a4055c9"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 12; color: rgb(255, 255, 255); opacity: 0.85; background-color: rgb(0, 0, 0);" data-placeholder-text="Text">
+<h3 style="text-align: center;"><span style="color:#FFFFFF">de</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 197px; left: 0px; top: 383px; height: auto;" data-block-id="c5bf8e629f5d0e5b63f1609af847d7b3"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 13; color: rgb(255, 255, 255); opacity: 0.85; background-color: rgb(0, 0, 0);" data-placeholder-text="Text">
+<h3><span style="color:#FFFFFF">Fase</span></h3>
+</div></div></section><section data-id="0a61d9b2bb0d320d40b06a28be91dbac">
+
+<div class="sl-block" data-block-type="image" data-block-id="34fada5e5f474c3fc6834c73154ac24b" style="min-width: 30px; min-height: 30px; width: 960px; height: 550.318px; left: 0px; top: 75px;"><a class="sl-block-content" style="z-index: 11;" href="https://www.ted.com/" target="_blank"><img data-natural-width="1570" data-natural-height="900" style="" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/4344944f3ea3b8d6d9774b93f95de66a.png"></a></div></section><section data-id="d659d064f2f862fdb469d40c8f0f6a2d">
+
+<div class="sl-block" data-block-type="image" data-block-id="80e1ccdfec83f51a2ab34c800df8abb0" style="min-width: 30px; min-height: 30px; width: 933.333px; height: 700px; left: 14px; top: 0px;"><a class="sl-block-content" style="z-index: 11;" href="http://www.instructables.com/" target="_blank"><img style="" data-natural-width="1200" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/629542dc91859f5ff736cd97f072f8bc.png"></a></div></section><section data-id="be74a4827f0d10882a79c93a7e0881fd"><div class="sl-block" data-block-type="image" data-block-id="a1d9a8f6a3362c71cb836c2b45bfe2fb" style="min-width: 30px; min-height: 30px; width: 360px; height: 299.25px; left: 520px; top: 121px;"><a class="sl-block-content" style="z-index: 11;" href="https://github.com/" target="_blank"><img style="" data-natural-width="800" data-natural-height="665" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/a2ce951ce7bfa2cc1cf6e44e2311569c.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="bdddde6696627a64fa10e342bd081bd0" style="min-width: 30px; min-height: 30px; width: 519.512px; height: 213px; left: 80px; top: 244px;"><a class="sl-block-content" style="z-index: 12;" href="https://github.com/" target="_blank"><img data-natural-width="1000" data-natural-height="410" style="" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/2a7def261515fd4067ce4e28d4536ea4.png"></a></div></section><section class="stack" data-id="658835795095d04ba437108e42ee4839"><section data-id="01d9b2290f8090ec433ef2d699009f91" data-background-image="iot-huelva-inteligente-parte-2/1eb260172c12acb9f58579d9b4e12975.jpg" data-background-color="rgb(129,137,144)">
+
+<div class="sl-block" data-block-type="text" style="width: 767px; left: 0px; top: 603px; height: auto;" data-block-id="4cd5813bd058d5f4d4ff6866e4b47627"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="border-width: 1px; z-index: 11; opacity: 0.7; background-color: rgb(0, 0, 0);">
+<h1><span style="color:#FFFFFF">Movimiento MAKER</span></h1>
+</div></div></section><section data-id="f2b571a460abc885415f472034edf596"><div class="sl-block" data-block-type="image" data-block-id="28f6db211d0d9334e998ed289a3ef4cc" style="min-width: 30px; min-height: 30px; width: 960px; height: 540px; left: 0px; top: 0px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1600" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/c1fc3c7a7ef45850fc6637dbb23b1fae.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="543d1b10da7f748c615359196681ef55" style="min-width: 30px; min-height: 30px; width: 496.173px; height: 113px; left: 12px; top: 560px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1449" data-natural-height="330" style="" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/684d649338dc26409cbdf15d646bac41.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="abb8c96f3b548c9d02009625dfe661a7" style="min-width: 30px; min-height: 30px; width: 287px; height: 112.901px; left: 657px; top: 560px;"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="272" data-natural-height="107" style="" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/360828acda7c808e40d8a0c39f3d5d20.gif"></div></div></section><section data-id="cdf958ae321db49da4bec43abb0912c6"><div class="sl-block" data-block-type="image" data-block-id="df0658ebf4a8b6c70b9fe2495b8ede63" style="min-width: 30px; min-height: 30px; width: 931px; height: 700px; left: 15px; top: 0px;"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="1197" data-natural-height="900" style="" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/0e93c463c72a020d71cf153b08d12283.jpg"></div></div></section><section data-id="447195af603a22bf7cccd36fccebd600" data-background-image="iot-huelva-inteligente-parte-2/380b93b8481059fe4bc258c21f1fbdae.png"><div class="sl-block" data-block-type="text" style="width: 193px; left: 767px; top: 0px; height: auto;" data-block-id="0aa4f831043f681c2ce8bdda1c49cfe1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="border-width: 1px; z-index: 11; opacity: 0.7; background-color: rgb(0, 0, 0);">
+<h2><span style="color:#FFFFFF">En...</span></h2>
+
+<p><strong><span style="color:#FFFFFF">Madrid</span></strong></p>
+
+<p><strong><span style="color:#FFFFFF">Bilbao</span></strong></p>
+
+<p><strong><span style="color:#FFFFFF">Barcelona</span></strong></p>
+
+<p><strong><span style="color:#FFFFFF">León</span></strong></p>
+
+<p><strong><span style="color:#FFFFFF">y más...</span></strong></p>
+</div></div></section><section data-id="33b42d0ea29c335ae4e819fbe7afbcbc"><div class="sl-block" data-block-type="iframe" data-block-id="cbf6ddc356dc569be31d6c49cff09835" style="min-width: 30px; min-height: 30px; width: 960px; height: 700px; left: 0px; top: 0px;"><div class="sl-block-content" style="z-index: 11;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://www.youtube.com/embed/N2apWHiX02c?enablejsapi=1"></iframe></div></div></section><section data-background-color="rgb(113,89,60)" data-background-size="cover" data-id="c061a5881568f30e00e29d2fb27891d3" data-background-image="iot-huelva-inteligente-parte-2/cff97a43ad5621946a25eb68bc445621.jpg"><div class="sl-block" data-block-type="text" style="width: 590px; left: 370px; top: 280px; height: auto;" data-block-id="0ed081c751a3d1986e38636d932367c0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="border-width: 1px; z-index: 11; opacity: 0.7; background-color: rgb(0, 0, 0);">
+<h3><a href="http://manualsupervivenciamaker.com/manual/" target="_blank"><span style="color:#FFFFFF">Manual Supervivencia Maker</span></a></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 590px; left: 370px; top: 626px; height: auto;" data-block-id="fd4d13d425d985d22172e3ae28999676"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12; opacity: 0.7; background-color: rgb(0, 0, 0);">
+<h2><a href="https://twitter.com/MakespaceMadrid/status/718461422242500609" target="_blank"><span style="color:#FFFFFF">#YaLoTengo</span></a></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 173px; left: 0px; top: 664px;" data-block-id="472d9ecd99adf2d529ca7677f133f692"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; opacity: 0.6; background-color: rgb(0, 0, 0);">
+<pre><span style="font-size:0.5em"><span style="color:#FFFFFF"><span style="text-align:start">foto del Makespace</span></span></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="fc93c4b48e2d83fde6592f154576495a" style="min-width: 4px; min-height: 4px; width: 590px; height: 243px; left: 370px; top: 362px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 14; opacity: 0.7;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 590 243"><rect width="590" height="243" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="b4003c5c3140ada6f44ced99c074a9ac" style="min-width: 30px; min-height: 30px; width: 577px; height: 227px; left: 376px; top: 370px;"><div class="sl-block-content" style="z-index: 15;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://www.youtube.com/embed/ZUzRjS3AD3I?enablejsapi=1"></iframe></div></div></section></section><section data-id="33c14fe00b090f555ca5c9d39163fd43" data-background-image="iot-huelva-inteligente-parte-2/d1d1004c57e69481efa75f93b7d6f3e1.jpg" data-background-color="rgb(45,24,56)"><div class="sl-block" data-block-type="text" style="width: 346px; left: 30px; top: 58px; height: auto;" data-block-id="d8f2f7ba3c62cb7477d8c7f5827b1733"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 10; opacity: 0.85; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);" data-placeholder-text="Text">
+<h1><span style="color:#FFFFFF">Fase</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 230px; left: 30px; top: 275px; height: auto;" data-block-id="144d0a14f4069ecfbb83844ed650e94d"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 11; opacity: 0.85; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);" data-placeholder-text="Text">
+<h1><span style="color:#FFFFFF">De</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 730px; left: 30px; top: 490px; height: auto;" data-block-id="efb133aaf90028673ab33cbeca28709c"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 14; color: rgb(255, 255, 255); opacity: 0.85; background-color: rgb(0, 0, 0);" data-placeholder-text="Text">
+<h1><span style="color:#FFFFFF">Prototipo</span></h1>
+</div></div></section><section class="stack" data-id="884b4f9b0a1be2d4d41bca5bdb907f7d"><section data-id="3908bd1e1c67de57b04a792699963b62"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="7806114243fad09a5eaf7782239b400e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>Electrónica</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 287px; height: auto;" data-block-id="a265b7567015fd0cb947fb00b1b7be0b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle">
+<h2>Un mundo físico infinito</h2>
+</div></div></section><section data-id="bb264c238a6ff0f9592a2cb24648b6c5"><div class="sl-block" data-block-type="text" style="width: 410px; left: 49px; top: 106px; height: auto;" data-block-id="90a0d095c9eac4436302f5c7033bfa98"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>Actuadores</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 49px; top: 200px; height: auto;" data-block-id="a3a80508da71c65e39793733f90eba35"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<ul style="color:rgb(68, 68, 68)">
+	<li>Motores  Corriente Continua</li>
+	<li>Motor Paso a paso</li>
+	<li>Servomotores</li>
+	<li>Relés</li>
+	<li>Indicadores luminosos</li>
+	<li>Zumbadores</li>
+	<li>Displays</li>
+	<li>LCDs</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 499px; top: 106px; height: auto;" data-block-id="3ff034dd2ea02538c25c0fde55da2778"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 12;">
+<h2>Sensores</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 499px; top: 200px; height: auto;" data-block-id="68c8b6372f99916a6b2e6b50d3867026"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 13;">
+<ul style="color:rgb(68, 68, 68)">
+	<li>Pulsadores/Interruptores</li>
+	<li>Distancia</li>
+	<li>Aceleración</li>
+	<li>Inclinación</li>
+	<li>Rotación</li>
+	<li>Fuerza</li>
+	<li>Ambiente</li>
+	<li>Navegación</li>
+	<li>Movimiento</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="29235bcec53873ae0754ae8d5f18f847" style="height: auto; min-width: 30px; min-height: 30px; width: 860px; left: 49px; top: 591px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p><strong>y muchos más...</strong></p>
+</div></div></section><section data-id="6b2457b69c9937861923ddb29db7a48a"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 87px; height: auto;" data-block-id="a769b04f5990852cf3bc46522e3cec44"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
+<h2>Hardware Libre</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 235px; height: auto;" data-block-id="14a86367bb132dd7b89b338caf08f2bf"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<blockquote>
+<p><span>Se llama </span><strong>hardware libre</strong><span>, </span><strong>hardware de código abierto</strong><span>, </span><strong>electrónica libre</strong><span> o </span><strong>máquinas libres</strong><span> a aquellos dispositivos de </span><em>hardware</em><span> cuyas especificaciones y diagramas esquemáticos son de acceso público, ya sea bajo algún tipo de pago, o de forma gratuita. </span></p>
+
+<p><span style="font-size:0.7em">- <a href="https://www.wikiwand.com/es/Hardware_libre" target="_blank">Wikipedia</a></span></p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 399px; height: 419.573px; left: 481px; top: 87px;" data-block-id="87130d72d47ccb5e818568730b886f34"><div class="sl-block-content"><img style="" data-natural-width="640" data-natural-height="673" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/98eeff169f7bd2dad7e913ecce81e5b7.png"></div></div></section><section data-id="4a155e13c1312b8355fb16e1d0798fa5"><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="6c03bcb726e961f9daa01fe1009a02f9"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Arduino y su ecosistema</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 800px; height: 338.824px; left: 80px; top: 221px;" data-block-id="86817f09dbc5bb8e9d1b59b669bdbc23"><div class="sl-block-content"><img style="" data-natural-width="765" data-natural-height="324" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/9dc3cf0aab810614aaba8ae318a8df52.png"></div></div></section><section data-id="ced2f17c3f32ba8d9cea9fdd107d8864"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 67px; height: auto;" data-block-id="40acaa19b7a7d4bd3cf870d550433208"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
+<h2>Arduino UNO</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 141px; height: auto;" data-block-id="3a261ff1a088b13ddca6e13b762d17ce"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Microcontrolador ATmega328.</li>
+	<li>Voltaje de entrada 7-12V.</li>
+	<li>Voltaje Operación 5v</li>
+	<li>14 pines digitales de I/O (6 salidas PWM).</li>
+	<li>6 entradas análogas.</li>
+	<li>32k de memoria Flash.</li>
+	<li>Reloj de 16MHz de velocidad.</li>
+	<li>Versión DIP (intercambiable)</li>
+	<li>Versión SMD (integrado)</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 420px; height: 560px; left: 480px; top: 70px;" data-block-id="e642ef73368fb2a882af3ab75d3e8d84"><div class="sl-block-content" data-inline-svg="false"><img style="" data-natural-width="675" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/20f58948de21a67b60e215a90447102d.jpg"></div></div></section><section data-id="1e455c7b485faacc240ee5d802f9ebe1"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 70px; height: auto;" data-block-id="4a64f799699bcc8f01dc1d49b40bda7a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
+<h2>Arduino Leonardo</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 210px; height: auto;" data-block-id="fedb803a0d26dcbb8ad3f23d2d12dbc1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Microcontrolador ATmega32u4.</li>
+	<li>Voltaje de entrada 7-12V.</li>
+	<li>Voltaje Operación 5v</li>
+	<li>20 pines digitales de I/O (7 salidas PWM, 6 convertibles analógicas).</li>
+	<li>12 entradas análogas.</li>
+	<li>32k de memoria Flash.</li>
+	<li>Reloj de 16MHz de velocidad.</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 420px; height: 560px; left: 480px; top: 70px;" data-block-id="e4b11700a1b52acecceb947b054a1f57"><div class="sl-block-content"><img style="" data-natural-width="675" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/3b644ed14f6fde509338b385e729be4e.jpg"></div></div></section><section data-id="1c244c3994f4184d634e6af6a5883632"><div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 70px; height: auto;" data-block-id="3d31f759217bdd08a8eb0077ba49f418"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;" dir="ui">
+<h2>Arduino Mega</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 144px; height: auto;" data-block-id="03238cbd28394a36e176bd40538ab7a5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Microcontrolador ATmega2560.</li>
+	<li>Voltaje de entrada 7-12V.</li>
+	<li>Voltaje Operación 5v</li>
+	<li>54 pines digitales de I/O (14 salidas PWM).</li>
+	<li>16 entradas análogas.</li>
+	<li>4 UARTs (hardware serial ports)</li>
+	<li>128kb de memoria Flash.</li>
+	<li>Reloj de 16MHz de velocidad.</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 420px; height: 560px; left: 480px; top: 70px;" data-block-id="92e22eec3e4a034960561db8ac1c0757"><div class="sl-block-content"><img style="" data-natural-width="675" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/bfa8a675784959a98b1f30ed152fffe1.jpg"></div></div></section><section data-id="5909d3640ea456aaf9a3d3e537e7d5a2"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 70px; height: auto;" data-block-id="4e6a91e3987726bc2aa622425a7a74ae"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;" dir="ui">
+<h2>Arduino Nano</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 144px; height: auto;" data-block-id="66280fa3d9954fe4c3f62689f73699b4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Microcontrolador Atmel ATmega168 or ATmega328.</li>
+	<li>Voltaje Operación 5v</li>
+	<li>14 pines digitales de I/O (6 salidas PWM).</li>
+	<li>8 entradas análogas.</li>
+	<li>16 KB (ATmega168) o 32 KB (ATmega328) de memoria Flash.</li>
+	<li>Reloj de 16MHz de velocidad.</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 420px; height: 560px; left: 480px; top: 70px;" data-block-id="3ea18fc29ee72fd4a1a15d92f64663bd"><div class="sl-block-content"><img style="" data-natural-width="675" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/fe98488882b3437d8a1bf4f963489e77.jpg"></div></div></section><section data-id="01a3977074edee82cbc0b1e2850d2e3e"><div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 70px; height: auto;" data-block-id="b14a6a7e70d23f347063f31e94daed29"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;" dir="ui">
+<h2>DFRobot Romeo</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 218px; height: auto;" data-block-id="7a4745c8ecc7f928c32cc55f865f6ba2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Basado en Arduino Leonardo</li>
+	<li>Compatible con placas de UNO R3</li>
+	<li>5 Pulsadores</li>
+	<li>Zócalos para Xbee, APC220 RF module y DF-Bluetooth Module</li>
+	<li>3 I2C/TWI .</li>
+	<li>Driver Motor (2A Max)</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 420px; height: 560px; left: 480px; top: 70px;" data-block-id="691ea7630cbe7fca1ce4918e741259b8"><div class="sl-block-content"><img style="" data-natural-width="675" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/58e4d0596a5f8cdaace71e584b53d4be.jpg"></div></div></section><section data-id="a5e2547a5a80574a2e4797c5ae306671"><div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 70px; height: auto;" data-block-id="b8795a2f935d1e73c326ff4719708db6"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;" dir="ui">
+<h2>Adafruit Gemma</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 210px; height: auto;" data-block-id="bf8d937daf7df05149fc299bde01aeb5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Microcontrolador ATTiny85 AVR</li>
+	<li>Voltaje Operación 3.3v</li>
+	<li>Micro-USB</li>
+	<li>Puntos de soldadura adaptados</li>
+	<li>8Kb de memoria Flash</li>
+	<li>Reloj de 8MHz de velocidad</li>
+	<li>3 GPIO (1 analógica y 2 PWM)</li>
+	<li>Soporte para I2C</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 420px; height: 560px; left: 480px; top: 70px;" data-block-id="806eaac3722cf6a8c48e4b03e8b78dde"><div class="sl-block-content"><img style="" data-natural-width="675" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/077469afbbd1c0168549b1f317dc955b.jpg"></div></div></section><section data-id="77dfb8eed8b31ef85ad0bdd22caa9879"><div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 70px; height: auto;" data-block-id="8885763578c580bc677af0f8615ff11c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;" dir="ui">
+<h2>Adafruit</h2>
+
+<h2>Flora v2</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 228px; height: auto;" data-block-id="4ac76553f6a32d035743ad3dbe90a461"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Voltaje Operación 3.3v</li>
+	<li>Micro-USB</li>
+	<li>Puntos de soldadura adaptados</li>
+	<li>Soporte I2C</li>
+	<li>NeoPixel incluido</li>
+	<li>4 Leds de estado</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 434.572px; height: 560px; left: 480px; top: 70px;" data-block-id="29f6ad4b524f29da57c839c3d41dabeb"><div class="sl-block-content"><img style="" data-natural-width="589" data-natural-height="759" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/3942b01dfcc42b5f3f89865d5fe9604c.png"></div></div></section><section data-id="93386e4b985767aec9a2a7affedee763"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 70px; height: auto;" data-block-id="fc7918400a3abba70819ae660f29c26f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;" dir="ui">
+<h2>BQ ZUM CORE</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 140px; height: auto;" data-block-id="d9bd593c7ae383ac8ae423897d0a9a0e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Basada en Arduino UNO</li>
+	<li>3.2 A continuo</li>
+	<li>2 Botones</li>
+	<li>Bluetooth</li>
+	<li>Micro-USB</li>
+	<li>Pines periféricos</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 420px; height: 560px; left: 480px; top: 70px;" data-block-id="88da652851d912dafa2a0a15284cb9b4"><div class="sl-block-content"><img style="" data-natural-width="675" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/fe0bd06de7dde959a9886fffdce3a9e0.jpg"></div></div></section><section data-id="1977b1836815476f24632f10e740f481"><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="bfd8d1f5b73aee73f075946a5d694e2d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Arduino Shields</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 745px; height: 558.75px; left: 107px; top: 141px;" data-block-id="e7902574b8af36cd588f67f1dec3f33d"><div class="sl-block-content" style=""><img style="" data-natural-width="1024" data-natural-height="768" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/fb472595f3d5c8c2461b1c997af5f523.jpg"></div></div></section><section data-id="ccd7f7f4736ed39d3c4ccb55c002f66d"><div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 70px; height: auto;" data-block-id="7b990bc26e6be964d918bf85f74ccdcc"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;" dir="ui">
+<h2>Arduino Ethernet</h2>
+
+<h2>Shield</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 303px; height: auto;" data-block-id="3477badb7dcb693e244a06449ad07a17"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Basado en Wiznet W5100</li>
+	<li>10/100 Mb</li>
+	<li>Soporte TCP/IP</li>
+	<li>Soporte RJ45</li>
+	<li>Soporte micro-SD</li>
+	<li>Conexión mediante SPI</li>
+	<li>Cliente/Servidor Web</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 420px; height: 560px; left: 480px; top: 70px;" data-block-id="12091c00971d22e6c6ada7940c8a0c71"><div class="sl-block-content"><img style="" data-natural-width="675" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/a43ba9a187ed15fd50aaa74bfffaee0f.jpg"></div></div></section><section data-id="473a72d9f1b963a4f9f45850f3015282"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 70px; height: auto;" data-block-id="7cd84837686a77485fdb67a4339beeb1"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;" dir="ui">
+<h2>RAMPS</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 420px; height: 560px; left: 480px; top: 70px;" data-block-id="b6740c75ac6b822d327dba152b53983f"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="675" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/032763fdba65b0a7bb25f51d4579a318.jpg"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="59ebc57f8f90b4d613d42d10348b96d6" style="height: auto; min-width: 30px; min-height: 30px; width: 430px; left: 25px; top: 144px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<blockquote>
+<p style="text-align:left">RepRap Arduino Mega Pololu Shield, or RAMPS for short. It is designed to fit the entire electronics needed for a RepRap in one small package for low cost. RAMPS interfaces an Arduino Mega with the powerful Arduino MEGA platform and has plenty room for expansion. - <a href="http://www.reprap.org/wiki/Ramps" target="_blank">RepRap</a></p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="b98f22d3aff116933b87ef83e03adcc9" style="height: auto; min-width: 30px; min-height: 30px; width: 430px; left: 23px; top: 584px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p><a href="http://reprap.org/mediawiki/images/b/bd/Diagrama_conexionado_Prusa_i3_v03.jpg" target="_blank"><strong>¡Conéctame!</strong></a></p>
+</div></div></section><section data-id="2a6cbbbf20f288b28a47c6bd03ba212a"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 70px; height: auto;" data-block-id="29aa13d88e6f59db678e41f4d7368334"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;" dir="ui">
+<h2>EDUBASICA</h2>
+
+<h2>SHIELD</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 228px; height: auto;" data-block-id="86e7e9cd0c990223dbacdf604958c993"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 12; text-align: left;">
+<p>Sensor Luz (LDR)</p>
+
+<p>Potenciómetro</p>
+
+<p>Botón pulsador</p>
+
+<p>Puente H</p>
+
+<p>Leds</p>
+
+<p><a href="https://github.com/jorgeroden/edubasica" target="_blank">Libre</a></p>
+
+<p><a href="http://www.practicasconarduino.com/manualrapido/" target="_blank">Libro de prácticas</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="81a08cd7a79a11595620875405e28668" style="height: auto; min-width: 30px; min-height: 30px; width: 721px; left: 120px; top: 612px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<pre><span style="font-size:0.7em"><a href="http://www.blog.ulisesgascon.com/edubasica-shield-con-nodejs/" target="_blank">EdubBasica Shield con Node.js</a> | <a href="https://twitter.com/fictiziaescuela/status/679631981509001216" target="_blank">Node.js con WebSockets</a></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="ab8f1702460a47787ddd246777cac2d0" style="min-width: 30px; min-height: 30px; width: 400px; height: 437.778px; left: 480px; top: 70px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="540" data-natural-height="591" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/b55d7d92f38ebf703691e26578a1c12e.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="3dd15f604832a7f41a4dbbf6c84b9ce5" style="height: auto; min-width: 30px; min-height: 30px; width: 329px; left: 523px; top: 516px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<pre><strong><a href="https://twitter.com/leobotmanuel/status/711149479454482436" target="_blank"><span style="font-size:0.7em">La historia de esta placa</span></a></strong></pre>
+</div></div></section><section data-id="1905eab2dbd5f897c77e508a1e1873b0"><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="5c6cb53a6f04296c4a25f708d6317bfc"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Raspberry Pi</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 387.644px; height: 490px; left: 286.5px; top: 175px;" data-block-id="a977559ef456b3e045fce33e339fb650"><div class="sl-block-content"><img style="" data-natural-width="712" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/a85d81f337ccb784502749221ba9e5e5.png"></div></div></section><section data-id="50d27fc3c5c4d8cd7751272779a2d848"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 70px; height: auto;" data-block-id="90ff0025d1d50f14d9b30b115991f05a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;" dir="ui">
+<h2>Raspberry Pi 3</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 140px; height: auto;" data-block-id="28bcc3ed90a1c691f21078811fe0348e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Procesador Broadcom BCM2387 (1,2 GHz, 4 núcleos ARM Cortex-A53)</li>
+	<li>1GB de RAM.</li>
+	<li>Ethernet, WiFi 802.11, Bluetooth 4.1 (LE) integrados</li>
+	<li>Salida HDMI, </li>
+	<li>jack Audio (3,5mm)</li>
+	<li>4 x USB 2.0</li>
+	<li>40 x GPIOs</li>
+	<li>MicroSD</li>
+	<li>Precio entorno a 45€</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 420px; height: 560px; left: 480px; top: 70px;" data-block-id="f4ebed0c9a38c1fe3a56238bd0ab4cc6"><div class="sl-block-content"><img style="" data-natural-width="675" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/a2bd229f0b3f66d05d26bea2c4789b4f.jpg"></div></div></section><section data-id="1b249b5cb683e03ddadd9a599e1bba6d"><div class="sl-block" data-block-type="text" style="width: 810px; left: 75px; top: 13px; height: auto;" data-block-id="13b0a23bf7643adde62e74ae59d91687"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>
+<span style="font-size:0.7em"><a href="https://www.southampton.ac.uk/~sjc/raspberrypi/pi_pictures.htm" target="_blank">RasPi Supercomputer</a><span style="color:rgb(34, 34, 34); text-align:start"> (2012, Simon Cox</span></span><span style="font-size:0.7em"><span style="color:rgb(34, 34, 34); text-align:start">)</span></span>
+</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 881px; height: 585.166px; left: 39px; top: 94px;" data-block-id="af5c0fb1bd1fd2d317ef413bb0191595"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1355" data-natural-height="900" style="" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/fb12b2aa8afc2d3d773604b57b1c9e3d.jpg"></div></div>
+</section><section data-id="73bf22b78688d9e74029881debb13ee9"><div class="sl-block" data-block-type="text" style="width: 647px; left: 0px; top: 33px; height: auto;" data-block-id="2d984954a1a968adb76153605b6e406f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2><span style="font-size:0.7em">Otra forma de ver las cosas...</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="29978995ca41afb06dab18b0e7b444e8" style="min-width: 30px; min-height: 30px; width: 647px; height: 573.952px; left: 0px; top: 126px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="992" data-natural-height="880" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/69c0e6fe1bc67af7be3e7ac3e5898894.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 280.132px; height: 368px; left: 661px; top: 52px;" data-block-id="20b94eea874676a113507999302ea347"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="322" data-natural-height="423" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/44305bb2267b03ff068933c254f4c856.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 280px; height: 265.823px; left: 661px; top: 434.177px;" data-block-id="ffd587affddcefa77c5f3dcbbe38040d"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="948" data-natural-height="900" style="" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/1303393089ed98cea2b6c7c28c345b68.jpg"></div></div></section><section data-id="ed9e42a53250165481cd47da0a52a13c"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 70px; height: auto;" data-block-id="ccd3a23176fcb2fea4530dec5b6dae2b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;" dir="ui">
+<h2>Raspberry Pi</h2>
+
+<h2>Zero </h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 229px; height: auto;" data-block-id="ac6a723bff73b9f836db371540b26beb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Procesador Broadcom BCM2835 (1 GHz, ARM11)</li>
+	<li>512Mb de RAM.</li>
+	<li>miniHDMI, </li>
+	<li>2 x microUSB (PWR y Datos)</li>
+	<li>6,5 x 3 x 0.5 cm</li>
+	<li>MicroSD</li>
+	<li><a href="http://whereismypizero.com/" target="_blank">Precio en <span style="color:rgb(34, 34, 34)">5$ (Fuera de Stock)</span></a></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 274.4px; height: 560px; left: 553px; top: 70px;" data-block-id="ddf07640eba60fc91cf5d0477dfaf01f"><div class="sl-block-content"><img style="" data-natural-width="441" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/c89668d11a2305da170c6cc00920c574.png"></div></div></section></section><section class="stack" data-id="9ba636a797729287c3effc3d54dbf63f"><section data-id="41251145d7322cab7b550874fc9264ea"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="4fe18c3f88b8cc53954a9b04c9591d1c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>Programación</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 287px; height: auto;" data-block-id="423f0b36b7213128aec342e6ada87671"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle">
+<h2>Entendernos en un plano físico</h2>
+</div></div></section><section data-id="f1fd901c91fa008d3cf8a3c83b7d016b"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 87px; height: auto;" data-block-id="95d5471e83835459f964d864a616cf51"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
+<h2>Software Libre</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 161px; height: auto;" data-block-id="7654321461d42755a9d6a4b125b6ac3c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<blockquote>El termino software libre refiere el conjunto de software que por elección manifiesta de su autor, puede ser copiado, estudiado, modificado, utilizado libremente con cualquier fin y redistribuido con o sin cambios o mejoras (...), que coloca la libertad del usuario informático como propósito ético fundamental.  <span style="font-size:0.7em">- <a href="https://www.wikiwand.com/es/Software_libre" target="_blank">Wikipedia</a></span>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 367.628px; height: 420px; left: 496.5px; top: 87px;" data-block-id="0821a7b365f94e2404ce1615fb5a2257"><div class="sl-block-content"><img style="" data-natural-width="716" data-natural-height="818" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/cf6d8a6d91059150dedae1bb21e4b756.png"></div></div></section><section data-id="c7a5b2c6332886cee76d1796f7157de7"><div class="sl-block" data-block-type="text" style="width: 410px; left: 49px; top: 106px; height: auto;" data-block-id="d1b6bbab0dce9814202593cda5168f07"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
+<h2>En Arduino</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 49px; top: 200px; height: auto;" data-block-id="8310aabec3649b556dad7bc4c2e9ab9f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left;">
+<ul>
+	<li>Comunidad muy activa</li>
+	<li>Entorno de desarrollo propio</li>
+	<li>Lenguaje propio basado en Processing y C++</li>
+	<li>Mediante Firmadata y librerías propias podemos dar soporte a casi todos los lenguajes (Python, Node, Java, Ruby, C/C++, Proccesing, .NET, etc...)</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 499px; top: 106px; height: auto;" data-block-id="f88b13209f5e28ad6764b5ddb6cd2139"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
+<h2>En Raspi</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 499px; top: 200px; height: auto;" data-block-id="22d09380cf83790484cbc1a5f1bc4b01"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left;">
+<ul>
+	<li>Gran comunidad</li>
+	<li>Programación gráfica y para niños</li>
+	<li>Soporta disribuciones linux como Raspbian, Debian, Fedora, etc... y Windows 10 IoT Core</li>
+	<li>Mediante  librerías propias podemos dar soporte GPIOs a muchos lenguajes de programación.</li>
+</ul>
+</div></div></section><section data-id="3be9d4279f69a7aab7cb46da17e4ed35"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 33px; height: auto;" data-block-id="be7aab5c0b808d262f926d475cac1582"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;" dir="ui">
+<h2>En Internet</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 140px; height: auto;" data-block-id="d13516f7114a46ee5f0a5305b7bac5f3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 12; text-align: left;">
+<h3>DIY</h3>
+
+<ul>
+	<li>Front-End (Html, CSS y JavaScript)</li>
+	<li>Back-End (Php, Node, Ruby, etc...)</li>
+	<li>Dev Ops (Protocolos, seguridad, y más...)</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 505px; top: 140px; height: auto;" data-block-id="8f6ec841f0dbc788cf03283406697fcd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<h3>Cloud</h3>
+
+<ul>
+	<li>SaaS (Software como servicio)</li>
+	<li>PaaS (Plataforma como servicio)</li>
+	<li>
+<span>IaaS (</span>infraestructura como servicio<span>)</span>
+</li>
+	<li>Otras alternativas...</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="a9e47901a8390a404c49e5122f7c329f" style="min-width: 30px; min-height: 30px; width: 159.968px; height: 70px; left: 560px; top: 525px;"><a class="sl-block-content" style="z-index: 14;" href="https://learn.adafruit.com/adafruit-io/overview" target="_blank"><img style="" data-natural-width="713" data-natural-height="312" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/0974d9ccc95464e5d6294e6e1f74fc41.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="2b98e7bdd8a6dada4385974900ef5ca2" style="min-width: 30px; min-height: 30px; width: 160px; height: 48px; left: 740px; top: 533px;"><a class="sl-block-content" style="z-index: 15;" href="https://www.carriots.com/" target="_blank"><img style="" data-natural-width="150" data-natural-height="45" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/91f33c16a5fd5c458b5081237958b9b4.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="f9c51077150561965b874928135e08c7" style="min-width: 30px; min-height: 30px; width: 140px; height: 70px; left: 670px; top: 595px;"><a class="sl-block-content" style="z-index: 16;" href="http://www.libelium.com/" target="_blank"><img data-natural-width="182" data-natural-height="91" style="" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/038f20a03ac6f276448b138b35a3240f.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="70df9ecd8022d04ae9189147efab8491" style="min-width: 30px; min-height: 30px; width: 158px; height: 158px; left: 132px; top: 517px;"><a class="sl-block-content" style="z-index: 17;" href="https://coggle.it/diagram/52e97f8c5a143de239005d1b/56212c4e4c505e0045c0d3bda59b77e5977c2c9bd40f3fd0b451bdcf8da4aa52" target="_blank"><img data-natural-width="900" data-natural-height="900" style="" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/de0e911da5e020a9712b8e1e1718679f.png"></a></div></section><section data-id="79280bd182450e63ba68d0a696fcad2f" data-background-image="iot-huelva-inteligente-parte-2/5a352f8942539e331d0fa4b8a4fd698f.jpg" data-background-color="rgb(11,24,60)"><div class="sl-block" data-block-type="text" data-block-id="202cd9abce3e4026c0dd53d5b48442fb" style="height: auto; min-width: 30px; min-height: 30px; width: 304px; left: 70px; top: 350px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; opacity: 0.82; color: rgb(255, 255, 255); background-color: rgb(255, 0, 0);">
+<blockquote>
+<p><span style="color:#FFFFFF"><span style="text-align:start">Red Hat se convierte en la primera compañía de código abierto en alcanzar un valor de 2 billones de dólares. - <a href="http://www.zdnet.com/" target="_blank">ZDNET</a></span></span></p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="9d9e0b44d13fdb1eae9a3cc65a8e9f60" style="height: auto; min-width: 30px; min-height: 30px; width: 533px; left: 427px; top: 298px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; opacity: 0.78; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">
+<blockquote>
+<p><span style="color:#FFFFFF"><span style="text-align:left">74% de las corporaciones participan actualmente en proyectos de código abierto - <a href="https://www.blackducksoftware.com" target="_blank">Blackduck</a></span></span></p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="1b1676c26a283f2a15935fb395d6ead6" style="height: auto; min-width: 30px; min-height: 30px; width: 216px; left: 39px; top: 115px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255); opacity: 0.82; background-color: rgb(0, 0, 0);">
+<blockquote>
+<p><span style="color:#FFFFFF"><span style="text-align:start">Un 27% de las empresas españolas usa software libre - <a href="http://www.silicon.es/un-27-de-las-empresas-espanolas-usa-software-libre-77515" target="_blank">Silicon</a></span></span></p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="b87f71ca5476a7efe7ca232dd903c134" style="height: auto; min-width: 30px; min-height: 30px; width: 504px; left: 456px; top: 483px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); opacity: 0.82; background-color: rgb(106, 168, 79);">
+<blockquote>
+<p>En la actualidad, el 75% de pymes y grandes empresas y el 51% de las microempresas ya están utilizando tecnologías libres. - <a href="http://comunidad.iebschool.com/iebs/software-de-gestion/software-libre-puestos-de-trabajo/" target="_blank">Iebschool</a></p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="073b6e9a17efcd4c8fd1c6485b323e67" style="height: auto; min-width: 30px; min-height: 30px; width: 656px; left: 304px; top: 0px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(255, 255, 255); opacity: 0.94; background-color: rgb(241, 194, 50);">
+<blockquote>
+<p style="text-align:left">En el País Vasco, el 62,5% de las empresas vascas disponen de software libre, navegadores por Internet, programas de ofimática, sistemas operativos gratuitos o abiertos. Un porcentaje que aumenta hasta el 79,2% en las empresas de 10 o más empleados. <em> - </em><a href="http://comunidad.iebschool.com/iebs/software-de-gestion/software-libre-puestos-de-trabajo/" target="_blank">Iebschool</a></p>
+</blockquote>
+</div></div></section></section><section class="stack" data-id="49f6e7b0c041b72e6252e368c6990f90"><section data-id="e44f8c835fa452ac34cefbc1c821a75e"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="b9304c9f26fb42510c6fb7e47e9fca79"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>Comunicaciones</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 287px; height: auto;" data-block-id="562e24f481a37b9ab0cd64e87d452c18"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle">
+<h2>Muchos canales, muchas opciones</h2>
+</div></div></section><section data-id="0e1a9176fc2f096fd89f4c8d3d76ca68">
+
+<div class="sl-block" data-block-type="image" data-block-id="37d2c17894b70f2c0437e30196b44c9f" style="min-width: 30px; min-height: 30px; width: 812.778px; height: 665px; left: 80px; top: 0px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1100" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/ffdc7969805416c14c041450cd9a02ca.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="ad20874c4369aa86301539a3285ec0e1" style="height: auto; min-width: 30px; min-height: 30px; width: 364px; left: 298px; top: 664px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<pre><span style="font-size:0.5em">Imagen de <a href="https://entrepreneurshiptalk.wordpress.com/" target="_blank">Internet of Things (IoT) talks</a></span></pre>
+</div></div></section></section><section class="stack" data-id="29b8afb10bdcfef72a65add4d2ff92c0"><section data-background-color="#000000" data-id="e54ead2d9a21ffcb8a4c188f181e11ab"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="1c47f5c21b5b3674e76373f8e1a4423c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1><span style="color:#FFFFFF">Datos</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 312px; height: auto;" data-block-id="c70d7b11a1fbae092ad85837c9840d0a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
+<blockquote>
+<pre><span style="color:#FFFFFF">No almacenes en la memoria lo que puedas almacenar en el bolsillo - Albert Einstein</span></pre>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="cec6b4456d32453ca7f416be895c836a" style="min-width: 30px; min-height: 30px; width: 360px; height: 225px; left: 600px; top: 475px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="1440" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/faa4fe6edf9bee636040d7d18db16cce.jpg"></div></div></section><section data-background-image="iot-huelva-inteligente-parte-2/c08ab9eab4c367e05ee24aa73800d0a6.jpg" data-background-color="rgb(25,31,24)" data-id="044683b12c5267eaa43daa94160ecbd4"><div class="sl-block" data-block-type="text" style="width: 410px; left: 49px; top: 106px; height: auto;" data-block-id="47514e612b6dd3fc2f6b9fe43cce4f7a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; padding: 10px; background-color: rgb(255, 255, 255);">
+<h2 style="text-align: center;">Opciones</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 49px; top: 210px; height: auto;" data-block-id="7714fa50ac09da28aa9c44a253e4fc06"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; padding: 10px; background-color: rgb(255, 255, 255);">
+<p>Bases de datos</p>
+
+<p>Plataformas Especializadas</p>
+
+<p>Almacenamiento local</p>
+
+<p>Almacenamiento Temporal</p>
+
+<p>Formatos de Intercambio</p>
+
+<p><strong>¡Mezcla y reinventa!</strong></p>
+</div></div></section><section data-background-image="iot-huelva-inteligente-parte-2/f6dff0812f9294f7000274b29153381e.jpg" data-background-color="rgb(62,93,119)" data-id="ca7462bc0e9bd6f8fa8062bcabbfe523"><div class="sl-block" data-block-type="text" style="width: 337px; left: 0px; top: 87px; height: auto;" data-block-id="7ecf3a3fd3931edabd87abc4b55d7d8b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11; padding: 10px; background-color: rgb(255, 255, 255);">
+<h2>  Big Data</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 337px; left: 0px; top: 190px; height: auto;" data-block-id="1098cfe709eb5c929ede77f4e7f2cf0c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 12; padding: 10px; background-color: rgb(255, 255, 255);">
+<blockquote>
+<p><span>El </span><em><strong>Big Data</strong></em><span> o </span><strong>Datos masivos</strong><span> es un concepto que hace referencia al </span><strong>almacenamiento de grandes cantidades de datos</strong><span> y a los procedimientos usados para encontrar patrones repetitivos dentro de esos datos. - <a href="https://www.wikiwand.com/es/Big_data" target="_blank">Wikipedia</a></span></p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 514px; left: 346px; top: 20px; height: auto;" data-block-id="5d5f9c9c1918f32dac80a63ce69beaca"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 13; padding: 10px; background-color: rgb(255, 255, 255);">
+<blockquote>
+<p><strong>Datos masivos</strong><span> es un término que hace referencia a una cantidad de datos tal que supera la capacidad del software habitual para ser capturados, administrados y procesados en un tiempo razonable. (...)En 2012 se estimaba su tamaño de entre una docena de </span><a href="https://www.wikiwand.com/es/Terabyte" target="_blank">terabytes</a><span> hasta varios </span><a href="https://www.wikiwand.com/es/Petabyte" target="_blank">petabytes</a><span> de datos en un único conjunto de datos. - <a href="https://www.wikiwand.com/es/Big_data" target="_blank">Wikipedia</a></span></p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="a3ccc12fc6e4f9f2700be484c4e5c378" style="height: auto; min-width: 30px; min-height: 30px; width: 320px; left: 346px; top: 474px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; padding: 10px; background-color: rgb(255, 255, 255);">
+<p style="text-align:left"><strong>Tipos:</strong></p>
+
+<ul>
+	<li style="text-align:left"><em>Structured Data</em></li>
+	<li style="text-align:left"><em>Unstructured Data</em></li>
+	<li style="text-align:left"><em>Semistructured Data</em></li>
+</ul>
+</div></div></section></section><section class="stack" data-id="ce4dada2fd21213503149f2703bb5145"><section data-background-color="#000000" data-id="ea161d7764db4674a4a4f2eb67540e28"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="5d091ba3e61cf063a1e905a0ab859ddc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1><span style="color:#FFFFFF">Datos</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 312px; height: auto;" data-block-id="dbbe9643e5c4fd4e4c31679b162265e8"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
+<blockquote>
+<pre><span style="color:#FFFFFF">Toda información es importante si está conectada a otra - Umberto Eco</span></pre>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 360px; height: 239.786px; left: 600px; top: 460px;" data-block-id="8ca97059982c4aac3748ec439e613299"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="560" data-natural-height="373" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/8c7dd3b3956eb44e74e8468fd73a3c38.jpg"></div></div></section><section data-background-image="iot-huelva-inteligente-parte-2/61f85c38fd13d70e7a675914745ed884.jpg" data-background-color="rgb(41,34,45)" data-id="c4d79fdd1eaab621439921b56536ae9f"><div class="sl-block" data-block-type="text" style="width: 399px; left: 67px; top: 106px; height: auto;" data-block-id="2c96cb0b13bd84305a29389446289168"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: center; background-color: rgb(255, 255, 255);">
+<h2>API</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 399px; left: 67px; top: 210px; height: auto;" data-block-id="c68e01934d3416c2b20ae41a093b4c0d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; padding: 10px; background-color: rgb(255, 255, 255);">
+<blockquote>
+<p>La <strong>interfaz de Programación de aplicaciones</strong>, abreviada como <strong>API</strong>, es el conjunto de subrutinas, funciones y procedimientos que ofrece cierta biblioteca para ser utilizado por otro software como una capa de abstracción. - <a href="https://www.wikiwand.com/es/Interfaz_de_programaci%C3%B3n_de_aplicaciones" target="_blank">Wikipedia</a></p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 445px; left: 499px; top: 106px; height: auto;" data-block-id="0bd8ba4356dcc91e486394e080be660b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: center; background-color: rgb(255, 255, 255);">
+<h2>REST</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 445px; left: 499px; top: 210px; height: auto;" data-block-id="f700c7e7d4e3654fe53d1b070e5bbb6d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; padding: 10px; background-color: rgb(255, 255, 255);">
+<blockquote>
+<p><span>La </span><strong>Transferencia de Estado Representacional </strong><span>(...) en la actualidad se usa en el sentido más amplio para describir cualquier interfaz entre sistemas que utilice directamente </span><a href="https://www.wikiwand.com/es/HTTP" target="_blank">HTTP</a> <span>para obtener datos o indicar la ejecución de operaciones sobre los datos - <a href="https://www.wikiwand.com/es/Representational_State_Transfer" target="_blank">Wikipedia</a></span></p>
+</blockquote>
+</div></div></section><section data-id="90619d104dc597cdbbc7fdf7061952e6"><div class="sl-block" data-block-type="text" style="width: 410px; left: 49px; top: 106px; height: auto;" data-block-id="5657f84823b68ea8aa99566240ca8c20"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>JSON</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 325px; left: 49px; top: 420px; height: auto;" data-block-id="fdb795eff9cbade7e4764422f1712723"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<blockquote>
+<p><strong>JSON</strong><span> es un formato de texto ligero para el intercambio de datos. - <a href="https://www.wikiwand.com/es/JSON" target="_blank">Wikipedia</a></span></p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 499px; top: 106px; height: auto;" data-block-id="93d58a55e1af30206ace92461687bfbd"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 12;">
+<h2>XML</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 347px; left: 482px; top: 210px; height: auto;" data-block-id="22bcc42ad169ad6c6c2f5b4ee6019582"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 13;">
+<blockquote>
+<p>XML es un lenguaje de marcas desarrollado por el World Wide Web Consortium.</p>
+
+<p>No se Utiliza exclusivamente en la web. Muchas aplicaciones y programas dan soporte a este formato.</p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="46cb7db884cf0ca60d28bb4925d40965" style="min-width: 30px; min-height: 30px; width: 191px; height: 191px; left: 49px; top: 210px;"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="320" data-natural-height="320" style="" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/c33e3294dba5c1abf4807e834020f072.png"></div></div></section><section data-background-color="#ffffff" data-id="db5fa00190905982a6a153b2eb5bd229"><div class="sl-block" data-block-type="text" style="width: 410px; left: 49px; top: 70px; height: auto;" data-block-id="0f18b170af586539f142cbbf9d547ac3"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>Datos Abiertos</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 398px; left: 49px; top: 217px; height: auto;" data-block-id="f1abee30e7a21a4245dd5a697e4c5111"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<p><span>El concepto </span><strong>datos abiertos </strong><span>es una </span><a href="https://www.wikiwand.com/es/Filosof%C3%ADa" target="_blank">filosofía</a><span> y práctica que persigue que determinados tipos de datos estén disponibles de forma libre para todo el mundo, sin restricciones de </span><a href="https://www.wikiwand.com/es/Derechos_de_autor" target="_blank">derechos de autor</a><span>, de </span><a href="https://www.wikiwand.com/es/Patente" target="_blank">patentes</a><span> o de otros mecanismos de control. - <a href="https://www.wikiwand.com/es/Datos_abiertos" target="_blank">Wikipedia</a></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 410px; left: 480px; top: 70px; height: auto;" data-block-id="cda363fba76125894632e124c1854a72"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 12;" dir="ui"><h2>Iniciativa Aporta</h2></div></div>
+<div class="sl-block" data-block-type="iframe" data-block-id="71675693c4e8c5cd0aae75cd29c73161" style="min-width: 30px; min-height: 30px; width: 422px; height: 422px; left: 480px; top: 217px;"><div class="sl-block-content" style="z-index: 14;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://www.youtube.com/embed/XYsKBpXcp1s?enablejsapi=1"></iframe></div></div></section><section data-id="40600fdf91346691590e25208401d51f"><div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 33px; height: auto;" data-block-id="234541082b9c91a1e7d66434532579ba"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2><span style="font-size:0.7em"><span style="color:rgb(34, 34, 34); text-align:start"><a href="http://airemadrid.herokuapp.com/" target="_blank">Aire Madrid</a> (2015, <a href="https://twitter.com/kom_256" target="_blank">Ulises Gascón</a>)</span></span></h2>
+</div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 881px; left: 40px; top: 651px;" data-block-id="514796b35de06031d3484d609c140d8d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<pre style="text-align:center"><span style="font-size:0.7em">Código y documentación: <a href="https://github.com/UlisesGascon/Aire-Madrid" target="_blank">Github</a> | Licencia: GNU GPL v3</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="587510e9a9e368028ab79e1989b069e8" style="min-width: 30px; min-height: 30px; width: 611.491px; height: 453px; left: 21px; top: 124px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1034" data-natural-height="766" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/f151f904e9f5c25910517f549142ce14.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="ce070829aa291b18fb2784eedc7c0207" style="min-width: 30px; min-height: 30px; width: 269.055px; height: 453px; left: 674px; top: 124px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="490" data-natural-height="825" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/34c8da279b0936ec4de8b53dbb81f7a0.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="f469a029837f0ac1390829a4268feaef" style="height: auto; min-width: 30px; min-height: 30px; width: 619px; left: 21px; top: 584px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<pre style="text-align:center"><a href="http://airemadrid.herokuapp.com/" target="_blank"><span style="font-size:0.7em">Mi Aplicación</span></a></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 269px; left: 674px; top: 584px;" data-block-id="c807df4bd1b21d7a10ccecbc24d1da50"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<pre style="text-align:center"><a href="http://www.mambiente.munimadrid.es/opendata/horario.txt" target="_blank"><span style="font-size:0.7em">Datos Ayuntamiento</span></a></pre>
+</div></div></section></section><section data-id="f24dcb9562c5310cbcab30cfff8052b0" data-background-image="iot-huelva-inteligente-parte-2/eefd013466181aed581dbf3a40f8fc64.jpg" data-background-color="rgb(225,218,216)"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 143px; left: 817px; top: 664px;" data-block-id="40e4f10233b8ec4101957f91304b31fc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; opacity: 0.6; background-color: rgb(0, 0, 0);">
+<pre><span style="font-size:0.5em"><span style="color:#FFFFFF"><span style="text-align:start">Photo by Acumen</span></span></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 346px; left: 0px; top: 56px; height: auto;" data-block-id="3183c82fe21c4794ece32e9b847b5dc8"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 12; opacity: 0.75; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);" data-placeholder-text="Text">
+<h1><span style="color:#FFFFFF">Fase</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 220px; left: 0px; top: 272px; height: auto;" data-block-id="967e61e6ac6ede520816c1f92693e182"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 13; opacity: 0.75; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);" data-placeholder-text="Text">
+<h1><span style="color:#FFFFFF">De</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 709px; left: 0px; top: 490px; height: auto;" data-block-id="a171c43cdd31327e6f321c89702780cb"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 15; opacity: 0.75; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);" data-placeholder-text="Text">
+<h1><span style="color:#FFFFFF">Producto</span></h1>
+</div></div></section><section data-background-image="iot-huelva-inteligente-parte-2/392793c5667dc5ba28e454cfe6e37c48.jpg" data-background-color="rgb(111,90,74)" data-background-size="cover" data-id="590d8b2fdd659d3ebc41ed07be4ccab2"><div class="sl-block" data-block-type="text" style="width: 730px; left: 150px; top: 170px; height: auto;" data-block-id="d323ca43de756bacea49081da6cb0a58"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="border-width: 1px; z-index: 10; opacity: 0.7; background-color: rgb(0, 0, 0);">
+<h1><span style="color:#FFFFFF">Fabricación Digital</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 578px; left: 302px; top: 305px; height: auto;" data-block-id="4225690ad214a39473b8ebe1a53dc497"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11; opacity: 0.7; background-color: rgb(0, 0, 0);">
+<h2><span style="color:#FFFFFF">Otra manera de hacer las cosas</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="c792ad0891b0ac3ebbf8390eeb898a5f" style="height: auto; min-width: 30px; min-height: 30px; width: 535px; left: 0px; top: 664px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; opacity: 0.6; background-color: rgb(0, 0, 0);">
+<pre><span style="font-size:0.5em"><span style="color:#FFFFFF"><span style="text-align:start">NYC Resistor’s main hacking table. Photo by Signe Brewster</span></span></span></pre>
+</div></div></section><section data-background-image="iot-huelva-inteligente-parte-2/5bd4f528a937df53ab64c6e373b2f782.jpg" data-background-color="rgb(119,102,95)" data-id="98dc5ed847b1d20e7f641bb832d39fa4"><div class="sl-block" data-block-type="text" style="width: 510px; left: 450px; top: 33px; height: auto;" data-block-id="c20fae68c341679a7f6dea8a2c3988d8"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; opacity: 0.8; background-color: rgb(34, 34, 34);">
+<h2><span style="color:#FFFFFF">Nuestro espacio</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 450px; left: 0px; top: 664px;" data-block-id="6e132225137446017a29090a968b0dc8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; opacity: 0.6; background-color: rgb(0, 0, 0);">
+<pre><span style="font-size:0.5em"><span style="color:#FFFFFF"><span style="text-align:start">NYC Resistor’s back room.</span></span></span><span style="font-size:0.5em"><span style="color:#FFFFFF"><span style="text-align:start"> Photo by Signe Brewster</span></span></span></pre>
+</div></div></section><section data-background-image="iot-huelva-inteligente-parte-2/6b3076b3890ff62f33f69e6be093e68b.jpg" data-background-color="rgb(111,104,100)" data-id="64f1d8068fa90d786d87e09b7e40991a"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 215px; left: 0px; top: 664px;" data-block-id="c844b9dfa89d75cc9eb1602d73c07952"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; opacity: 0.6; background-color: rgb(0, 0, 0);">
+<pre><span style="font-size:0.5em"><span style="color:#FFFFFF"><span style="text-align:start">Photo by Signe Brewster</span></span></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 347px; left: 110px; top: 0px; height: auto;" data-block-id="8ee2df22fddb341924f9043e5be3a321"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 14; opacity: 0.8; background-color: rgb(34, 34, 34);">
+<h2><span style="color:#FFFFFF">Corte Laser</span></h2>
+</div></div></section><section data-background-image="iot-huelva-inteligente-parte-2/e81e4fd7480ce82456fb2d63d771d636.jpg" data-background-color="rgb(77,68,63)" data-id="c4135f693a7f6a401b87a6554a5baaff"><div class="sl-block" data-block-type="text" style="width: 473px; left: 0px; top: 19px; height: auto;" data-block-id="e96b7f3180f919da790139509fc3c652"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; opacity: 0.73; background-color: rgb(0, 0, 0);">
+<h2><span style="color:#FFFFFF">Fresadora CNC</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 160px; left: 0px; top: 664px;" data-block-id="0ed59fce0187e51ce22099e42a8b89fa"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; opacity: 0.8; background-color: rgb(0, 0, 0);">
+<pre><span style="font-size:0.5em"><span style="color:#FFFFFF"><span style="text-align:start">Photo by Ani Liu</span></span></span></pre>
+</div></div></section><section class="stack" data-id="eb0aeb5763bccd677fefd9684175a6f9"><section data-background-image="iot-huelva-inteligente-parte-2/07d24c40cce3f43090d6be6e9c3dd8e1.jpg" data-background-color="rgb(95,76,64)" data-id="1b49f5097b729ebdaa8bba440cd66d08"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 212px; left: 0px; top: 664px;" data-block-id="3ae8e18bb83d851ed5654585bb419ffa"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; opacity: 0.6; background-color: rgb(0, 0, 0);">
+<pre><span style="font-size:0.5em"><span style="color:#FFFFFF"><span style="text-align:start">Photo by Signe Brewster</span></span></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 400px; left: 0px; top: 0px; height: auto;" data-block-id="dc913deaeb3ed61de4ae9f252ddffd7a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 13; opacity: 0.8; background-color: rgb(34, 34, 34);">
+<h2><span style="color:#FFFFFF">Impresora 3D</span></h2>
+</div></div></section><section data-id="ea85fc759c11a6e7beb06755fea4f14a"><div class="sl-block" data-block-type="image" data-block-id="4d42afa660cecafa8426ef0c29e1fd6b" style="min-width: 30px; min-height: 30px; width: 443.333px; height: 700px; left: 517px; top: 0px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="570" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/be5add2475d0510989573c251ae46f57.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="eafba2c194aeda359401e762aad55960" style="min-width: 30px; min-height: 30px; width: 435.882px; height: 450px; left: 44px; top: 0px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="494" data-natural-height="510" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/2620b94b0a0461aa68d1ac7810f2cbd9.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="da4fd53b5c98311ec9966b04838817f0" style="min-width: 30px; min-height: 30px; width: 191.822px; height: 202px; left: 288px; top: 490px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="490" data-natural-height="516" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/0d86d64df4e2a9d222d7e291416123f8.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="25b2c1ee3a370d5c76f024e71451bfa0" style="min-width: 30px; min-height: 30px; width: 196px; height: 203.365px; left: 44px; top: 490px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="479" data-natural-height="497" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/c89c4fe64ccb1415cbb58a760c5e4eaa.png"></div></div></section></section><section data-background-image="iot-huelva-inteligente-parte-2/bba85f7923b97db30c33938c766be225.jpg" data-background-color="rgb(105,97,91)" data-id="762d6c3b2de28404a03fe673340b32ed"><div class="sl-block" data-block-type="text" style="width: 268px; left: 659px; top: 77px; height: auto;" data-block-id="2a2085c2b850332d3711fb8f84d7286f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; opacity: 0.8; padding: 10px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">
+<p style="text-align:left"><span style="font-size:xx-large; text-align:left">Crowdsourcing</span></p>
+
+<p style="text-align:left"><span style="color:#FFFFFF">Goteo</span></p>
+
+<p style="text-align:left"><span style="color:#FFFFFF">Opciones clasicas</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 268px; left: 659px; top: 20px; height: auto;" data-block-id="50b63bf7d9ff2236c544cb9b76f14fff"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 12; opacity: 0.8; background-color: rgb(0, 0, 0);">
+<h3><span style="color:#FFFFFF">Financiación</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 245px; left: 605px; top: 285px; height: auto;" data-block-id="1bba4b879875973c5464b8b543fc837f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 13; opacity: 0.8; background-color: rgb(0, 0, 0);">
+<h3><span style="color:#FFFFFF">Fabricación</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 244px; left: 607px; top: 344px; height: auto;" data-block-id="1f3369c1c5552d4249a215d57bf42c1f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; opacity: 0.8; padding: 10px; background-color: rgb(0, 0, 0);">
+<p style="text-align:left"><span style="color:#FFFFFF">Placas</span></p>
+
+<p style="text-align:left"><span style="color:#FFFFFF">Tiradas grandes</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 394px; left: 566px; top: 548px; height: auto;" data-block-id="19dc67d8d208484b41b48e36511e0534"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; padding: 10px; opacity: 0.7; background-color: rgb(0, 0, 0);">
+<p style="text-align: left;"><span style="color:#FFFFFF">Equipo Humano</span></p>
+
+<p style="text-align: left;"><span style="color:#FFFFFF">Distribución (E-commerce)</span></p>
+
+<p style="text-align: left;"><span style="color:#FFFFFF">Co-Working</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 394px; left: 566px; top: 490px; height: auto;" data-block-id="18b24e11e4fb6cbc4741c5346415ef8b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 16; opacity: 0.7; background-color: rgb(0, 0, 0);">
+<h3><span style="color:#FFFFFF">Ampliación</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 209px; left: 68px; top: 169px; height: auto;" data-block-id="aa9f81dea81e7a256509fe45515a0414"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 17; opacity: 0.8; background-color: rgb(0, 0, 0);">
+<h3><span style="color:#FFFFFF">Gestión</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 209px; left: 68px; top: 227px; height: auto;" data-block-id="da562763c7216396926d65244ee0461f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; opacity: 0.8; padding: 10px; background-color: rgb(0, 0, 0);">
+<p style="text-align: left;"><span style="color:#FFFFFF">Incidencias</span></p>
+
+<p style="text-align: left;"><span style="color:#FFFFFF">Retornos</span></p>
+
+<p style="text-align: left;"><span style="color:#FFFFFF">Caducidad</span></p>
+
+<p style="text-align: left;"><span style="color:#FFFFFF">Stock</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 172px; left: 0px; top: 448px; height: auto;" data-block-id="422f3474ec8f339fbee341f4490013bf"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 19; opacity: 0.8; background-color: rgb(0, 0, 0);">
+<h3><span style="color:#FFFFFF">Innovar</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 172px; left: 0px; top: 507px; height: auto;" data-block-id="5f50ff8a479d936ddf411d5e82354fdc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; opacity: 0.8; padding: 10px; background-color: rgb(0, 0, 0);">
+<p style="text-align:left"><span style="color:#FFFFFF">Nuevos productos</span></p>
+
+<p style="text-align:left"><span style="color:#FFFFFF">Mejoras</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 224px; left: 0px; top: 664px;" data-block-id="61a0d0b13d48e190d54c2bba241a5e15"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; opacity: 0.6; background-color: rgb(0, 0, 0);">
+<pre><span style="font-size:0.5em"><span style="color:#FFFFFF"><span style="text-align:start">Photo by Signe Brewster</span></span></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 414px; left: 0px; top: 0px; height: auto;" data-block-id="e7cf0f5f8f279f8f16f9c10ee998d015"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 22; opacity: 0.8; background-color: rgb(34, 34, 34);">
+<h1><span style="color:#FFFFFF">Escalando</span></h1>
+</div></div></section><section class="stack" data-id="e571969357123aee66fd5c683f079e1f"><section data-id="2f7541315fd50fbf65dbdf7739e031db" data-background-image="iot-huelva-inteligente-parte-2/c77f3537304b555231a90f0aef1a0d30.jpg" data-background-color="rgb(146,146,147)"><div class="sl-block" data-block-type="text" style="width: 407px; left: 553px; top: 504px; height: auto;" data-block-id="ebae8f2164842196b227d48a6b4d7256"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; color: rgb(255, 255, 255); border-width: 3px; border-style: solid; padding: 21px; background-color: rgb(241, 30, 24);" data-placeholder-text="Text">
+<h2><span style="font-size:0.9em">RETOS</span></h2>
+</div></div></section><section data-id="f4f5b7da6ab08cbec07375cf4ee6296f"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 87px; height: auto;" data-block-id="ce7ed255ad7c1ed8edee49ab44ad881f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
+<h2>Retos Principales</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 234px; height: auto;" data-block-id="baee04f718cd4cbb6bff6d429162a28d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Privacidad</li>
+	<li>Seguridad</li>
+	<li>Baterías</li>
+	<li>Conectividad</li>
+	<li>Usabilidad</li>
+	<li>Falta de Armonización</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 454px; height: 421.672px; left: 480px; top: 70px;" data-block-id="78b1d027a77cf404ac6088ad14f821fc"><div class="sl-block-content"><img style="" data-natural-width="969" data-natural-height="900" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/8bacd0072b04d3092c6d970da2157245.jpg"></div></div></section><section data-id="091b8291805d8411d5e99b0bbf29f429"><div class="sl-block" data-block-type="image" style="width: 610.758px; height: 638px; left: 175px; top: 0px;" data-block-id="a38c1df9933abd8da7b45619da4eea5d"><div class="sl-block-content"><img style="" data-natural-width="695" data-natural-height="726" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/075bfbda16c07b33783519719fab704d.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 733px; left: 114px; top: 649px; height: auto;" data-block-id="841788bec6532dc75ad89954872d5695"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<pre><span style="font-size:0.9em"><a href="https://www.truste.com/resources/privacy-research/us-internet-of-things-index-2014/" target="_blank"><span style="color:rgb(34, 34, 34); text-align:left">TRUSTe Internet of Things Privacy Index 2014</span></a></span></pre>
+</div></div></section><section data-id="0bbc94a5bf9088d99fbb5b05910c1224"><div class="sl-block" data-block-type="image" style="width: 854px; height: 648.794px; left: 54px; top: 0px;" data-block-id="1b3e51dee4070145d06133016ea57aac"><div class="sl-block-content"><img style="" data-natural-width="695" data-natural-height="528" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/f3aa925b496a1fb643b77af774142110.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 733px; left: 114px; top: 649px; height: auto;" data-block-id="17eee54a6d48139d70fe0159102ceacf"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<pre><span style="font-size:0.9em"><a href="https://www.truste.com/resources/privacy-research/us-internet-of-things-index-2014/" target="_blank"><span style="color:rgb(34, 34, 34); text-align:left">TRUSTe Internet of Things Privacy Index 2014</span></a></span></pre>
+</div></div></section></section><section data-background-color="rgb(157,133,116)" data-background-image="iot-huelva-inteligente-parte-2/54cc02d61b18df72f08965507d77c697.jpg" data-id="81cffc2b3154d2d85a3a06c032062f6a"><div class="sl-block" data-block-type="text" style="height: auto; width: 338px; left: 577px; top: 77px;" data-block-id="2036ca6a32b28c5411d37e96075a15da"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; background-color: rgb(45, 45, 45);">
+<h1><span style="color:#FFFFFF">¡Gracias!</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 439px; left: 517px; top: 263px;" data-block-id="f39d9eec9a7ec7b0f2e3a741eb55f29b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255); padding: 10px; background-color: rgb(45, 45, 45);">
+<blockquote>
+<p><span style="color:#FFFFFF">Los sueños son sumamente importantes. Nada se hace sin que antes se imagine.  </span></p>
+
+<p><span style="color:#FFFFFF">- George Lucas</span></p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 106.488px; height: 37px; left: 854px; top: 663px;" data-block-id="c810f4902f1164dea6a487077cf57564"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="118" data-natural-height="41" style="" data-lazy-loaded="" data-src="iot-huelva-inteligente-parte-2/f3699697921758db6f7b7847580a54ae.png"></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":652780,"slug":"iot-huelva-inteligente-parte-2","title":"IOT Huelva Inteligente (Parte 2)","description":"¿Qué aprenderá? En este seminario, de 10:00 a 14:00, veremos, partiendo de una base sencilla en la que no es necesario tener conocimiento previo; qué es el IoT, el alcance, así como su potencialidad y proyección. Una charla \"in crescendo\" de la mano de Ulises Gascón, que culminará en horario de tarde, de 16:00 a 18:00, con el Taller IoT, en el que se proporcionará un Kit de Arduino para cada grupo y se realizarán prácticas introductorias cuyo objetivo será el acercamiento al IoT de primera mano. http://bit.ly/iot-huelva  ","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2016-04-15T20:19:52.758Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/0893991e02c383f396d660d7f9a74008/thumb.jpg","view_count":1768,"user":{"id":479298,"username":"ulisesgascon","name":"Ulises Gascon Gonzalez","description":"#OpenSource Developer | Senior Software Engineer \r\nGuideSmiths| #GDE Firebase | Co-fundador Open Source Weekends (OSW) | Profe Fictizia | Prev: Google, IBM | #Maker","thumbnail_url":"https://lh6.googleusercontent.com/-vAQb4yzFJ2I/AAAAAAAAAAI/AAAAAAAACMs/s77kk0urspk/photo.jpg?sz=50","account_type":"enterprise","team_id":1662,"settings":{"id":320998,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null},"membership":{"role":"owner","manager":true,"activated":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":74,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":null,"data_updated_at":1499602067413,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"notes":{"98dc5ed847b1d20e7f641bb832d39fa4":"HOLA HOLA"}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
