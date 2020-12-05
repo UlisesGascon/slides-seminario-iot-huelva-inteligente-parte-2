@@ -1,2 +1,5 @@
-# slides-seminario-iot-huelva-inteligente-parte-2
-Seminario de IOT en Huelva Inteligente | Parte 2 | 14 de Abril de 2016
+# Seminario de IOT en Huelva (Parte 2)
+
+Este repositorio contiene la segunda presentación.
+
+[Más información sobre Seminario de IOT en Huelva ](https://github.com/UlisesGascon/slides-seminario-iot-huelva-inteligente)
